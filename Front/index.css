@@ -117,8 +117,8 @@ section {
   -webkit-background-clip: text;
   background-position: -33rem 0;
 }
-.home.show-animate .home-content .text-animate h3{
-    animation: homeBgText 6s linear infinite;
+.home.show-animate .home-content .text-animate h3 {
+  animation: homeBgText 6s linear infinite;
 }
 .home-content .text-animate h3::before {
   content: "";
@@ -129,10 +129,9 @@ section {
   height: 100%;
   border-right: 2px solid var(--main-color);
   z-index: -1;
- 
 }
-.home.home.show-animate .home-content .text-animate h3::before{
-    animation: homeCursorText 6s linear infinite;
+.home.home.show-animate .home-content .text-animate h3::before {
+  animation: homeCursorText 6s linear infinite;
 }
 
 .home-content p {
@@ -367,6 +366,12 @@ span {
 .skills-column .skills-box {
   position: relative;
 }
+.skills-content{
+  max-height: 650px;
+  overflow-y: auto;
+ min-width: 200px;
+
+}
 .skills-box .skills-content {
   position: relative;
   border: 0.2rem solid var(--main-color);
@@ -379,7 +384,7 @@ span {
 .skills-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+
 }
 .skills-content h3 {
   display: inline-block;
@@ -397,7 +402,7 @@ span {
 .contact {
   min-height: 100vh;
   padding-bottom: 7rem;
-  background-color: var(--bg-color)
+  background-color: var(--bg-color);
 }
 
 .contact h2 {
@@ -503,8 +508,8 @@ span {
   animation: none;
 }
 
-section:nth-child(odd) .animate.scroll{
-    background: var(--second-bg-color);
+section:nth-child(odd) .animate.scroll {
+  background: var(--second-bg-color);
 }
 
 .about.show-animate .animate.scroll,
@@ -679,70 +684,64 @@ section:nth-child(odd) .animate.scroll{
   }
 }
 
-
-
-
-
-
-.portfolio{
+.portfolio {
   background-color: var(--second-bg-color);
   min-height: 100vh;
 }
-.portfolio h2{
+.portfolio h2 {
   margin-bottom: 4rem;
 }
-.portfolio-container{
+.portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
-.portfolio-box{
+.portfolio-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
-.portfolio-box img{
+.portfolio-box img {
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover img {
   transform: scale(1.1);
 }
 
-
-.portfolio-box .portfolio-layer{
+.portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-padding: 0 4rem;
-transform: translateY(100%);
-transition: .5s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
 
-.portfolio-layer h4{
+.portfolio-layer h4 {
   font-size: 3rem;
 }
-.portfolio-layer p{
+.portfolio-layer p {
   font-size: 1.6rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
 }
-.portfolio-layer a{
+.portfolio-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -751,7 +750,7 @@ transition: .5s ease;
   background: var(--text-color);
   border-radius: 50%;
 }
-.portfolio-layer a i{
+.portfolio-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
